@@ -16,12 +16,14 @@ body {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #990b0f;
+	color: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #990b0f;
+	color: #fff;
     text-shadow: none;
 }
 
@@ -118,6 +120,23 @@ a:hover {
 	width: 240px;
 	z-index: 2;
 }
+
+	.panel-main .pull {
+		background: url("../i/panel-pull.png") 0 0 no-repeat;
+		display: block;
+		position: absolute;
+		left: 100%;
+		top: 50%;
+		margin: -100px 0 0 0;
+		width: 22px;
+		height: 43px;
+	}
+
+	.panel-main .pull-left {
+		background-position: 0 -43px;
+		left: auto;
+		right: 100%;
+	}
 
 body.content-left .panel-main {
 	left: 100%;

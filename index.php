@@ -21,7 +21,8 @@
 <body class="">
 	<div class="panel-main">
 		<a href="/" class="logo"></a>
-		<p style="text-align: center;"><a href="#" id="debug-reflow">REFLOW</a></p>
+		<a href="#" class="pull pull-right"></a>
+		<a href="#" class="pull pull-left"></a>
 	</div>
 
 	<div class="header">

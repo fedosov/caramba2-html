@@ -6,7 +6,7 @@ jQuery(function()
 	})
 	.trigger("resize");
 
-	$(".page-right-inner .items a, #debug-reflow").on("click", function()
+	$(".page-right-inner .items a, .panel-main .pull").on("click", function()
 	{
 		$("body").toggleClass("content-left");
 		return false;
