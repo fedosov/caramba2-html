@@ -20,6 +20,7 @@
 <body>
 	<div class="panel-left">
 		<a href="/" class="logo"></a>
+		<p style="text-align: center;"><a href="#">REFLOW</a></p>
 	</div>
 
 	<div class="header">
@@ -40,12 +41,35 @@
 
 	<div class="content">
 		<div class="banner-header" style="background: #000;"><a href="#" style="background-image: url('/i/~tmp.banner-header.jpg')"></a></div>
-		okay<br />
-		<img src="#" alt="" width="100px" height="2000px" /><br />
-		okay
+		<div class="inner">
+			okay<br>
+			<img src="/i/header-user-d.gif" alt="" width="100px" height="2000px"><br>
+			okay
+		</div>
 	</div>
 
-	<div class="footer">footer</div>
+	<div class="footer">
+		<div class="filter">
+			<div class="inner">
+				<ul class="filter-list filter-type">
+					<li class="active"><a href="#">Свежак</a></li>
+					<li><a href="#">Популярные</a></li>
+					<li><a href="#">Комментарии</a></li>
+				</ul>
+				<ul class="filter-list filter-when">
+					<li class="active"><a href="#">сегодня</a></li>
+					<li><a href="#">неделя</a></li>
+					<li><a href="#">месяц</a></li>
+					<li><a href="#">все время</a></li>
+				</ul>
+			</div>
+		</div>
+		<ul class="items">
+			<?php for ($i = 0; $i < 50; $i++): ?>
+			<li><a href="#"><img src="/i/~tmp.footer-item.jpg" width="228" height="124" alt=""><span class="play"></span><span class="title">Хитрый кот</span></a></li>
+			<?php endfor; ?>
+		</ul>
+	</div>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
