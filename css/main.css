@@ -84,7 +84,26 @@ a:hover {
 .content .page,
 .content {
 	/* анимация переходов влево/вправо */
-	-webkit-transition: left 1.0s ease-in-out, margin 1.0s ease-in-out, padding 1.0s ease-in-out;
+	-webkit-transition: left 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	                  , margin 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	                  , padding 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	;
+	-moz-transition: left 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	               , margin 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	               , padding 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	;
+	-ms-transition: left 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+                  , margin 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+                  , padding 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	;
+	-o-transition: left 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+                 , margin 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+                 , padding 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	;
+	transition: left 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	          , margin 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	          , padding 500ms cubic-bezier(0.860, 0.000, 0.070, 1.000)
+	;
 }
 
 .panel-main {
@@ -206,8 +225,99 @@ body.content-left .content {
 	}
 
 	.content .inner {
-		padding: 32px 20px 32px 30px;
+		padding: 32px 4px 32px 30px;
 	}
+
+	.content .page-right .items {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+		.content .page-right .items li {
+			background: #ebebeb;
+			border: 1px solid #c0c0c0;
+			overflow: hidden;
+			margin: 0 0 14px 0;
+		}
+
+			.content .page-right .items li img {
+				width: 100%;
+			}
+
+			.content .page-right .items li span.play {
+				background: url("../i/footer-items-play.png") 0 0 no-repeat;
+				display: block;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				margin: -45px 0 0 -30px;
+				width: 61px;
+				height: 60px;
+			}
+
+			.content .page-right .items li.size-big span.play {
+				background: url("../i/page-right-items-play.png") 0 0 no-repeat;
+				margin: -70px 0 0 -47px;
+				width: 94px;
+				height: 93px;
+			}
+
+		.content .page-right .items li.size-big {
+			width: 500px;
+			height: 330px
+		}
+
+			.content .page-right .items li.size-big img {
+				height: 268px;
+			}
+
+		.content .page-right .items li.size-medium {
+			width: 500px;
+		}
+
+			.content .page-right .items li.size-medium img {
+				height: 220px;
+			}
+
+		.content .page-right .items li.size-small {
+			width: 240px;
+			height: 157px;
+		}
+
+			.content .page-right .items li.size-small img {
+				height: 130px;
+			}
+
+			.content .page-right .items li a {
+				color: #181818;
+			}
+
+			.content .page-right .items li .title,
+			.content .page-right .items li .desc {
+				display: block;
+				padding: 2px 50px;
+			}
+
+			.content .page-right .items li .title {
+				font: 14px 'OpenSansBold';
+			}
+
+			.content .page-right .items li.size-medium .title {
+				font-size: 12px;
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+
+			.content .page-right .items li.size-small .title {
+				font-size: 11px;
+				padding: 5px 9px 8px;
+			}
+
+			.content .page-right .items li .desc {
+				font-size: 11px;
+				padding-bottom: 6px;
+			}
 
 .banner-header {
 	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);

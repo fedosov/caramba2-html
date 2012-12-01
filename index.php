@@ -42,17 +42,42 @@
 	<div class="content">
 		<div class="page page-right">
 			<div class="page page-left">
-				<div class="inner">
+				<div class="inner page-left-inner">
 					2<br>
 					<img src="/i/header-user-d.gif" alt="" width="100px" height="1000px"><br>
 					2
 				</div>
 			</div>
 			<div class="banner-header" style="background: #000;"><a href="#" style="background-image: url('/i/~tmp.banner-header.jpg')"></a></div>
-			<div class="inner">
-				1<br>
-				<img src="/i/header-user-d.gif" alt="" width="100px" height="2000px"><br>
-				1
+			<div class="inner page-right-inner">
+				<ul class="items">
+					<li class="box size-big">
+						<a href="#">
+							<img src="/i/~tmp.page-right-item-big.jpg" alt="">
+							<span class="play"></span>
+							<span class="title">Рэй RWJ — У песика есть суперсила!</span>
+							<span class="desc">Кого бы Вы добавили в хит-парад? Может быть знаете то, чего не знают следственные органы? Или знают, но стесняются</span>
+						</a>
+					</li>
+					<?php for ($i = 0; $i < 6; $i++): ?>
+					<li class="box size-small">
+						<a href="#">
+							<img src="/i/~tmp.page-right-item-small.jpg" alt="">
+							<span class="play"></span>
+							<span class="title">Картавый Adidas</span>
+						</a>
+					</li>
+					<?php endfor; ?>
+					<?php for ($i = 0; $i < 20; $i++): ?>
+					<li class="box size-medium">
+						<a href="#">
+							<img src="/i/~tmp.page-right-item-medium.jpg" alt="">
+							<span class="play"></span>
+							<span class="title">Карамба VS Ларри Кинг – кто кого?</span>
+						</a>
+					</li>
+					<?php endfor; ?>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -74,7 +99,7 @@
 			</div>
 		</div>
 		<ul class="items">
-			<?php for ($i = 0; $i < 50; $i++): ?>
+			<?php for ($i = 0; $i < 30; $i++): ?>
 			<li><a href="#"><img src="/i/~tmp.footer-item.jpg" width="228" height="124" alt=""><span class="play"></span><span class="title">Хитрый кот</span></a></li>
 			<?php endfor; ?>
 		</ul>
@@ -82,6 +107,7 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+	<script src="/js/vendor/jquery.masonry.min.js"></script>
 	<script src="/js/main.js"></script>
 </body>
 </html>

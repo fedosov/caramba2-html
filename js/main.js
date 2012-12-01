@@ -6,9 +6,17 @@ jQuery(function()
 	})
 	.trigger("resize");
 
-	$("#debug-reflow").on("click", function()
+	$(".page-right-inner .items a, #debug-reflow").on("click", function()
 	{
 		$("body").toggleClass("content-left");
 		return false;
+	});
+
+	$(".content .page-right .items").masonry(
+	{
+		itemSelector: 'li',
+		isAnimated: true,
+		columnWidth: 250.0,
+		gutterWidth: 9.0
 	});
 });
