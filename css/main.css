@@ -78,17 +78,34 @@ a:hover {
 	text-decoration: underline;
 }
 
-.panel-left {
+.panel-main,
+.header .inner,
+.footer .filter,
+.content .page,
+.content {
+	/* анимация переходов влево/вправо */
+	-webkit-transition: left 1.0s ease-in-out, margin 1.0s ease-in-out, padding 1.0s ease-in-out;
+}
+
+.panel-main {
 	background: #1a1a1a;
 	box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 	color: #d6d6d6;
 	float: left;
+	margin: 0;
 	position: fixed;
+	left: 0;
+	top: 0;
 	width: 240px;
 	z-index: 2;
 }
 
-	.panel-left .logo {
+body.content-left .panel-main {
+	left: 100%;
+	margin-left: -240px;
+}
+
+	.panel-main .logo {
 		background: url("../i/panel-left-logo.gif") center 29px no-repeat;
 		display: block;
 		height: 112px;
@@ -96,7 +113,7 @@ a:hover {
 		padding: 29px 0 6px 0;
 	}
 
-	.panel-left a {
+	.panel-main a {
 		color: #d6d6d6;
 	}
 
@@ -114,6 +131,10 @@ a:hover {
 		margin: 0 0 0 240px;
 		padding: 18px 0;
 		overflow: hidden;
+	}
+
+	body.content-left .header .inner {
+		margin: 0 240px 0 0;
 	}
 
 	.header .menu,
@@ -160,7 +181,29 @@ a:hover {
 
 .content {
 	padding: 55px 0 198px 240px; /* 55px, 156px + 42px -- высота шапки и подвала соответственно */
+	position: relative;
+	overflow: hidden;
 }
+
+body.content-left .content {
+	padding-left: 0;
+	padding-right: 240px;
+	overflow: hidden;
+}
+
+	.content .page {
+		margin: 0;
+		width: 100%;
+	}
+
+	.content .page-left {
+		float: left;
+		margin-left: -100%;
+	}
+
+	body.content-left .content .page-right {
+		margin-left: 100%;
+	}
 
 	.content .inner {
 		padding: 32px 20px 32px 30px;
@@ -199,6 +242,10 @@ a:hover {
 		top: -42px;
 		width: 100%;
 		height: 42px;
+	}
+
+	body.content-left .footer .filter {
+		left: 0;
 	}
 
 	.footer .filter .inner {

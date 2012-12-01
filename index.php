@@ -17,10 +17,10 @@
 
 	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
-<body>
-	<div class="panel-left">
+<body class="">
+	<div class="panel-main">
 		<a href="/" class="logo"></a>
-		<p style="text-align: center;"><a href="#">REFLOW</a></p>
+		<p style="text-align: center;"><a href="#" id="debug-reflow">REFLOW</a></p>
 	</div>
 
 	<div class="header">
@@ -40,11 +40,20 @@
 	</div>
 
 	<div class="content">
-		<div class="banner-header" style="background: #000;"><a href="#" style="background-image: url('/i/~tmp.banner-header.jpg')"></a></div>
-		<div class="inner">
-			okay<br>
-			<img src="/i/header-user-d.gif" alt="" width="100px" height="2000px"><br>
-			okay
+		<div class="page page-right">
+			<div class="page page-left">
+				<div class="inner">
+					2<br>
+					<img src="/i/header-user-d.gif" alt="" width="100px" height="1000px"><br>
+					2
+				</div>
+			</div>
+			<div class="banner-header" style="background: #000;"><a href="#" style="background-image: url('/i/~tmp.banner-header.jpg')"></a></div>
+			<div class="inner">
+				1<br>
+				<img src="/i/header-user-d.gif" alt="" width="100px" height="2000px"><br>
+				1
+			</div>
 		</div>
 	</div>
 

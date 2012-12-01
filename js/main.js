@@ -2,7 +2,13 @@ jQuery(function()
 {
 	$(window).on("resize", function()
 	{
-		$(".panel-left").height($(window).height());
+		$(".panel-main").height($(window).height());
 	})
 	.trigger("resize");
+
+	$("#debug-reflow").on("click", function()
+	{
+		$("body").toggleClass("content-left");
+		return false;
+	});
 });
