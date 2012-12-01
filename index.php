@@ -8,6 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>CarambaTV</title>
 	<meta name="description" content="">
+	<meta name="author" content="Mikhail Fedosov (tbs.micle@gmail.com)">
 	<meta name="viewport" content="width=device-width">
 
 	<link rel="stylesheet" href="/css/normalize.min.css">
